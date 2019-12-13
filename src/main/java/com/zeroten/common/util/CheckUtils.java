@@ -43,6 +43,9 @@ public class CheckUtils {
                 return true;
             }
         }
+        if(str1 == null && str2 == null){
+            return true;
+        }
         return false;
     }
     /*
@@ -56,6 +59,9 @@ public class CheckUtils {
             if(n1.equals(n2)){
                 return true;
             }
+        }
+        if(n1 == null && n2 == null){
+            return true;
         }
         return false;
     }

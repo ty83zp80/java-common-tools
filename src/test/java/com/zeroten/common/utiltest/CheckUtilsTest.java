@@ -22,12 +22,12 @@ public class CheckUtilsTest {
         Assert.assertEquals(CheckUtils.equalsString("xyz",null),false);
         Assert.assertEquals(CheckUtils.equalsString("xyz","abc"),false);
         Assert.assertEquals(CheckUtils.equalsString("xyz","xyz"),true);
-        Assert.assertEquals(CheckUtils.equalsString(null,null),false);
+        Assert.assertEquals(CheckUtils.equalsString(null,null),true);
 
         //equals Integer相等判定 测试用例
         Assert.assertEquals(CheckUtils.equalsInteger(10,null),false);
         Assert.assertEquals(CheckUtils.equalsInteger(10,20),false);
         Assert.assertEquals(CheckUtils.equalsInteger(10,10),true);
-        Assert.assertEquals(CheckUtils.equalsInteger(null,null),false);
+        Assert.assertEquals(CheckUtils.equalsInteger(null,null),true);
     }
 }
